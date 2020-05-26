@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="C:\Users\dahem\Desktop\proyecto\imagenes\logo.png" type="image/x-icon">
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script src="altura.js"></script>
+<title>Nutrientes,sabor,calidad</title>
+<link rel="stylesheet" href="menu.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="secciones.css">
+<link rel="stylesheet" href="boton.css">
+<script>
+
+    var index = 0;
+
+    var listaimg = ["https://img.freepik.com/vector-gratis/vector-manos-sosteniendo-cuchillo-tenedor_77430-93.jpg?size=626&ext=jpg", "https://img.freepik.com/vector-gratis/infografia-alimentos-vitaminicos_23-2148509501.jpg?size=338&ext=jpg", "https://img.freepik.com/vector-gratis/fondo-comida-diseno-plano_23-2147845840.jpg?size=338&ext=jpg", "https://img.freepik.com/foto-gratis/vegetales-puestos-izquierda-pizarra-negra_1220-685.jpg?size=626&ext=jpg"];
+
+$(function() {
+  
+    setInterval(changeImage,5000);
+  
+});
+
+function changeImage() {
+  
+ 
+   $('body').css("background-image", 'url(' + listaimg[index] + ')');
+                  
+   index++;
+                  
+   if(index == 4)
+      index = 0;
+    
+}
+
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+    
+</script> 
+    
+</head>
+<body> 
+    
+    <div class="loader"></div>
+        <div class="clase">
+        <div style="width: 1400px;"><img src="imagenes/hombre.jpg"></div>
+        <div class="texto-encima"></div>
+        <div class="centrado"><h1 style="font-family: 'Merriweather', serif"><h1>Cultura Alimenticia</h1></div>
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li class="firts-item">
+                    <a href="proyecto.html">
+                        <img src="C:\Users\dahem\Desktop\proyecto\imagenes\home.jpg" alt="" class="imagen">
+                        <span class= "text-item">Inicio</span>
+                        <span class="down-item"></span>
+                        <a href="index.html"></a>
+
+                    </li>
+
+                    <li>
+                        <a href="Nosotros.html">
+                            <img src="C:\Users\dahem\Desktop\proyecto\imagenes\us.jpg" alt="" class="imagen">
+                            <span class="text-item" id = "Nosotros">Nosotros</span>
+                            <span class="down-item"></span>
+                            <a href="Nosotros.html"></a>
+        
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Mas informacion.html">
+                            <img src="C:\Users\dahem\Desktop\proyecto\imagenes\informacion.png" alt="" class="imagen">
+                            <span class="text-item">mas informacion</span>
+                            <span class="down-item"></span>
+                            <a href="Mas informacion.html"></a>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="Blog.html">
+                            <img src="C:\Users\dahem\Desktop\proyecto\imagenes\blog.jpg" alt="" class="imagen">
+                            <span class="text-item">Blog</span>
+                            <span class="down-item"></span>
+                            <a href="Blog.html"></a>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </nav> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <audio src="Audio/calm1.mp3" preload="none" controls autoplay loop></audio>
+            <div id="d1">
+                <div style="text-align: center;margin-top: 12%;max-height: 30%;"><h3>Pimientos rellenos de quinoa</h3></div>
+                <div style="max-width: 50%;"><img src="imagenes/pimientos.jpg"></div>
+                <div style="text-align: center;;max-height: 30%;;"><h3>Si te cuesta comer vegetales, estos pimientos rellenos de quinoa pueden ayudarte a que te resulte más sencillo. Son fáciles de hacer y están deliciosos.</h3></div>
+                <a href="recetas/pimientos rellenos de quinoa.html" class="button">Mas informacion</a>
+            </div>
+            <div id="d2">
+                <div style="text-align: center;margin-top: 12%;max-height: 30%;"><h3>jugo de granada</h3></div>
+                <div style="max-width: 40%;"><img src="imagenes/jugo de granada.jpg"></div>
+                <div style="text-align: center;;max-height: 30%;;"><h3>Esta fruta es una poderosa fuente de antioxidantes y agentes antiinflamatorios. Aprovecha cuando las granadas están de temporada pues el jugo procesado tiene azúcar y químicos preservantes que afectan tu salud.</h3></div>
+                <a href="recetas/jugo de granada.html" class="button">Mas informacion</a>
+            </div>
+            <div id="d3">
+                <div style="text-align: center;margin-top: 12%;max-height: 30%;"><h3>Pudin de plátano. Sin leche y sin azúcar</h3></div>
+                <div style="max-width: 30%;"><img src="imagenes/postre de platano.jpg"></div>
+                <div style="text-align: center;;max-height: 30%;;"><h3>Puedes utilizar cualquier resto de fruta para realizar este delicioso postre.</h3></div>
+                <a href="recetas/pudin de platano sin leche y sin azucar.html" class="button">Mas informacion</a>
+            </div>
+
+            <div id="d4">
+                <div style="text-align: center;margin-top: 12%;max-height: 30%;"><h3> Tortitas de calabaza fáciles</h3></div>
+                <div style="max-width: 50%;"><img src="imagenes/tortitas de calabaza.jpg"></div>
+                <div style="text-align: center;;max-height: 30%;;"><h3>Prepara estas deliciosas tortitas con muy pocos ingredientes.</h3></div>
+                <a href="#" class="button">Mas informacion</a>
+                <a href="#" class="mexico">Mas comida mexicana</a>
+            </div>
+            <br>
+            <div class="main">
+             <div class="slides">
+                <div style="max-width: 800px;max-height: 800px;"> <img src="imagenes/10 tips.png" alt=""></div>
+                 <div style="max-width: 600px;max-height: 600px;"><img src="imagenes/consejos.jpg" alt=""></div>
+                 <div style="max-width: 500px;max-height:500px;"><img src="imagenes/Menu de vida saludable.jpg" alt=""></div>
+                 <div style="max-width: 1000px;max-height: 800px;"> <img src="imagenes/comer bien.png" alt=""></div>
+                 <div style="max-width: 600px;max-height: 800px;"> <img src="imagenes/fin de semana sano.jpg" alt=""></div>
+             </div>
+            </div>
+            <script src="jquery.slides.js"></script>
+            <script  src="jquery.slides.min.js"></script>
+            <script>
+                $(function(){
+                    $(".slides").slidesjs({
+                        play:{
+                            active: true,
+
+                            effect: "slide",
+
+                            interval: 10000,
+
+                            auto: true,
+                            
+                            swap: true,
+
+                            pauseOnHover: false,
+
+                            restartDelay: 2500
+
+                        }
+                    });
+                });
+            </script>
+        </body>
+        </html>
+
+
+
+        
+        
+        
